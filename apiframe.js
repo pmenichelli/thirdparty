@@ -44,7 +44,7 @@ document.body.appendChild(fetchButton);
 document.body.appendChild(document.createElement('hr'));
 
 const xhrCredentialsInput = document.createElement('input');
-xhrCredentialsInput.type = 'radio';
+xhrCredentialsInput.type = 'checkbox';
 xhrCredentialsInput.id = 'xhrCredentialsInput';
 const xhrCredentialsLabel = document.createElement('label');
 xhrCredentialsLabel.innerText = 'withCredentials';
