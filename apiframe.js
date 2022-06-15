@@ -13,7 +13,7 @@ function makeXHRRequest() {
   var url = 'https://safari-origin-null.glitch.me/';
 
   http.open('POST', url, true);
-  http.withCredentials = true;
+  http.withCredentials = document.getElementById('xhrCredentialsInput').value;
 
   http.onreadystatechange = function() {//Call a function when the state changes.
       if(http.readyState == 4 && http.status == 200) {
@@ -40,9 +40,19 @@ document.body.appendChild(fetchOptionsLabel);
 document.body.appendChild(fetchOptionsInput);
 document.body.appendChild(fetchButton);
 
+document.body.appendChild(document.createElement('hr'));
+
+const xhrCredentialsInput = document.createElement('input');
+xhrCredentialsInput.type = 'radio';
+xhrCredentialsInput.id = 'xhrCredentialsInput';
+const xhrCredentialsLabel = document.createElement('label');
+xhrCredentialsLabel.for = 'xhrCredentialsInput';
+
 const xhrButton = document.createElement('button');
 xhrButton.innerText = 'Make XHR request!';
 xhrButton.addEventListener('click', makeXHRRequest);
 
+document.body.appendChild(xhrCredentialsLabel);
+document.body.appendChild(xhrCredentialsInput);
 document.body.appendChild(xhrButton);
 
