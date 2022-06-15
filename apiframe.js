@@ -34,6 +34,7 @@ fetchOptionsInput.value = `{
     "credentials": "include"
  }`;
 const fetchOptionsLabel = document.createElement('label');
+fetchOptionsLabel.innerText = 'Fetch Options';
 fetchOptionsLabel.for = 'fetchOptionsInput';
 
 document.body.appendChild(fetchOptionsLabel);
@@ -46,6 +47,7 @@ const xhrCredentialsInput = document.createElement('input');
 xhrCredentialsInput.type = 'radio';
 xhrCredentialsInput.id = 'xhrCredentialsInput';
 const xhrCredentialsLabel = document.createElement('label');
+xhrCredentialsLabel.innerText = 'withCredentials';
 xhrCredentialsLabel.for = 'xhrCredentialsInput';
 
 const xhrButton = document.createElement('button');
