@@ -30,7 +30,8 @@ fetchButton.addEventListener('click', makeFetchRequest);
 const fetchOptionsInput = document.createElement('textarea');
 fetchOptionsInput.id = 'fetchOptionsInput';
 fetchOptionsInput.value = `{
-    method: 'POST,
+    "method": "POST",
+    "credentials": "include"
  }`;
 const fetchOptionsLabel = document.createElement('label');
 fetchOptionsLabel.for = 'fetchOptionsInput';
