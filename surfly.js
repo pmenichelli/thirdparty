@@ -1,6 +1,6 @@
 
 console.log('creating iframe...');
-window.SURFLY_COBRO_ORIGIN = 'https://set-cookies.glitch.me';
+window.SURFLY_COBRO_ORIGIN = 'https://pmenichelli.github.io/thirdparty';
 const surflyApiFrame = document.createElement('iframe');
 
 surflyApiFrame.id = 'surfly-api-frame';
