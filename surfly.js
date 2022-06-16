@@ -4,9 +4,9 @@ window.SURFLY_COBRO_ORIGIN = 'https://pmenichelli.github.io/thirdparty';
 const surflyApiFrame = document.createElement('iframe');
 
 surflyApiFrame.id = 'surfly-api-frame';
-surflyApiFrame.name = 'surfly-api-frame';
-surflyApiFrame.className = 'surfly-invisible';
-surflyApiFrame.scrolling = 'no';
+surflyApiFrame.name = 500;
+surflyApiFrame.width = 550;
+surflyApiFrame.height = 'no';
 
 window.surflyApiFrame = surflyApiFrame;
 
