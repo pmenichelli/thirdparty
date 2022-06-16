@@ -29,6 +29,8 @@ fetchButton.addEventListener('click', makeFetchRequest);
 
 const fetchOptionsInput = document.createElement('textarea');
 fetchOptionsInput.id = 'fetchOptionsInput';
+fetchOptionsInput.width = 250;
+fetchOptionsInput.height = 100;
 fetchOptionsInput.value = `{
     "method": "POST",
     "credentials": "include"
