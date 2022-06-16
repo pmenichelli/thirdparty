@@ -13,7 +13,7 @@ function makeXHRRequest() {
   var url = 'https://safari-origin-null.glitch.me/';
 
   http.open('POST', url, true);
-  http.withCredentials = document.getElementById('xhrCredentialsInput').value;
+  http.withCredentials = document.getElementById('xhrCredentialsInput').checked;
 
   http.onreadystatechange = function() {//Call a function when the state changes.
       if(http.readyState == 4 && http.status == 200) {
